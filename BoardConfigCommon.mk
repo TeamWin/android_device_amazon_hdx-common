@@ -35,11 +35,7 @@ BOARD_KERNEL_SEPARATED_DT := true
 
 # Kernel config
 TARGET_KERNEL_SOURCE := kernel/amazon/hdx-common
-ifeq ($(TARGET_BUILD_VARIANT),eng)
-TARGET_KERNEL_CONFIG ?= msm8974-hdx_defconfig
-else
-TARGET_KERNEL_CONFIG ?= msm8974-hdx-perf_defconfig
-endif
+TARGET_KERNEL_CONFIG := msm8974-hdx_defconfig
 TARGET_KERNEL_SELINUX_CONFIG := selinux_defconfig
 TARGET_KERNEL_CROSS_COMPILE_PREFIX := arm-linux-androideabi-
 
@@ -179,12 +175,13 @@ TW_CUSTOM_BATTERY_PATH := /sys/class/power_supply/bq27x41
 TW_USE_TOOLBOX := true
 TW_USE_TOYBOX := true
 TW_EXCLUDE_SUPERSU := true
+TW_THEME := portrait_hdpi
 ifneq (,$(strip $(wildcard bootable/recovery-twrp/twrp.cpp)))
 RECOVERY_VARIANT := twrp
 endif
 
 # hdx old bootloader dtb compatibility fix + bootloader signature exploit patch
-BOARD_CUSTOM_BOOTIMG_MK := device/amazon/hdx-common/mkboot.mk
+BOARD_CUSTOM_BOOTIMG_MK := device/amazon/hdx-common/mkbootimg.mk
 
 # SELinux policies
 # qcom sepolicy
@@ -194,3 +191,4 @@ BOARD_SEPOLICY_DIRS += \
         device/amazon/hdx-common/sepolicy
 
 MALLOC_SVELTE := true
+USE_HDX_BT := false

@@ -1,5 +1,5 @@
 allow qti_init_shell bluetooth_data_file:file getattr;
-allow qti_init_shell bluetooth_loader_exec:file { open read };
+#allow qti_init_shell bluetooth_loader_exec:file { open read }; commented out for now until this is fixed
 allow qti_init_shell bluetooth_prop:property_service { set };
 allow qti_init_shell btnvtool_exec:file { read getattr open execute execute_no_trans };
 allow qti_init_shell cnd_data_file:dir search;

@@ -274,3 +274,6 @@ $(call inherit-product-if-exists, frameworks/native/build/phone-xxhdpi-2048-hwui
 
 # set private bt-vendor source
 $(call project-set-path-variant,bt-vendor,amazon-hdx,device/amazon/hdx-common/libbt-vendor)
+
+#ensure cryptfs path is set
+TARGET_CRYPTFS_HW_PATH := device/amazon/hdx-common/cryptfs_hw
