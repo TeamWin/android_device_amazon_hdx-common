@@ -157,7 +157,7 @@ TARGET_USE_CUSTOM_LUN_FILE_PATH := /sys/devices/msm_dwc3/f9200000.dwc3/gadget/lu
 USE_CAMERA_STUB := true
 
 # CWM Recovery
-TARGET_RECOVERY_FSTAB := device/amazon/hdx-common/rootdir/etc/fstab.qcom
+TARGET_RECOVERY_FSTAB := device/amazon/hdx-common/rootdir/etc/fstab.hdx
 TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
 BOARD_USES_MMCUTILS := true
 BOARD_HAS_LARGE_FILESYSTEM := true

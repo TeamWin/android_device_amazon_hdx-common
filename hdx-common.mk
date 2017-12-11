@@ -34,7 +34,7 @@ PRODUCT_COPY_FILES += \
 
 # Ramdisk
 PRODUCT_PACKAGES += \
-	fstab.qcom \
+	fstab.hdx \
 	init.qcom.rc \
 	init.qcom.usb.rc \
 	init.target.rc \

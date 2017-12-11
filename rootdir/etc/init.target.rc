@@ -46,7 +46,7 @@ on post-fs
     export LD_PRELOAD libNimsWrap.so
 
 on fs
-    mount_all fstab.qcom
+    mount_all fstab.hdx
 
     wait /dev/block/platform/msm_sdcc.1/by-name/persist
     mount ext4 /dev/block/platform/msm_sdcc.1/by-name/persist /persist nosuid nodev barrier=1
