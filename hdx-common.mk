@@ -35,18 +35,18 @@ PRODUCT_COPY_FILES += \
 # Ramdisk
 PRODUCT_PACKAGES += \
 	fstab.hdx \
-	init.qcom.rc \
-	init.qcom.usb.rc \
+	init.hdx.rc \
+	init.hdx.usb.rc \
 	init.target.rc \
 	init.class_main.sh \
-	init.qcom.class_core.sh \
-	init.qcom.factory.sh \
-	init.qcom.sensor.sh \
-	init.qcom.sh \
-	init.qcom.ssr.sh \
-	init.qcom.usb.sh \
-	ueventd.qcom.rc \
-	init.recovery.qcom.rc
+	init.hdx.class_core.sh \
+	init.hdx.factory.sh \
+	init.hdx.sensor.sh \
+	init.hdx.sh \
+	init.hdx.ssr.sh \
+	init.hdx.usb.sh \
+	ueventd.hdx.rc \
+	init.recovery.hdx.rc
 
 # Audio/Media
 PRODUCT_COPY_FILES += \
